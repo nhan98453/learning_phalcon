@@ -5,9 +5,13 @@ class UsersController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
-        return json_encode($this->session->get('user'));
-        $users = Users::find();
-        return json_encode($users);
+        if($this->session->has('user'))
+        {
+            return json_encode(Users::find());
+        }
+    }
+    public function logoutAction(){
+        $this->session->destroy();
     }
     public function loginAction(){
         $username=$this->request->getPost('username');

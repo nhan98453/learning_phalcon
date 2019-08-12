@@ -1,5 +1,4 @@
 <?php
-
 class UsersGroup extends \Phalcon\Mvc\Model
 {
 

@@ -59,11 +59,6 @@ class Users extends \Phalcon\Mvc\Model
     {
         $this->setSchema("test");
         $this->setSource("Users");
-        $this->hasOne(
-            'usergroup',
-            'UserGroup',
-            'id'
-        );
     }
 
     /**
