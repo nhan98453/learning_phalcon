@@ -4,7 +4,7 @@ use Phalcon\Mvc\View;
 use Phalcon\Mvc\View\Engine\Php as PhpEngine;
 use Phalcon\Mvc\Url as UrlResolver;
 use Phalcon\Mvc\View\Engine\Volt as VoltEngine;
-use Phalcon\Mvc\Model\Metadata\Memory as MetaDataAdapter;
+// use Phalcon\Mvc\Model\Metadata\Memory as MetaDataAdapter;
 use Phalcon\Session\Adapter\Files as SessionAdapter;
 use Phalcon\Flash\Direct as Flash;
 
@@ -85,9 +85,9 @@ $di->setShared('db', function () {
 /**
  * If the configuration specify the use of metadata adapter use it or use memory otherwise
  */
-$di->setShared('modelsMetadata', function () {
-    return new MetaDataAdapter();
-});
+// $di->setShared('modelsMetadata', function () {
+//     return new MetaDataAdapter();
+// });
 
 /**
  * Register the session flash service with the Twitter Bootstrap classes
