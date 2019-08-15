@@ -7,6 +7,11 @@ class IndexController extends ControllerBase
     {
 
     }
+    
+    public function route404Action()
+    {
+        return "This route is not supported";
+    }
 
 }
 

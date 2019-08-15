@@ -3,18 +3,38 @@ use Phalcon\Mvc\Router\Group;
 use Phalcon\Mvc\Router;
 
 $router = $di->getRouter();
+$router->removeExtraSlashes(true);
 
-$userGroup = new Group(['controller' => 'xxx']);
-const ROUTE_USER_GROUPS = '/user-groups';
+$user = new Group(['controller' => 'User']);
+const ROUTE_USER_GROUPS = '/US';
+$user->setPrefix(ROUTE_USER_GROUPS);
 
-$userGroup->setPrefix(ROUTE_USER_GROUPS);
-$userGroup->addGet('', ['action' => 'get']);
-$userGroup->addPut('/{id}', ['action' => 'update']);
-$userGroup->addPost('', ['action' => 'post']);
-$userGroup->addDelete('/{id}', ['action' => 'delete']);
+$user->addPost('/login', ['action' => 'login']);
+$user->addget('/logout', ['action' => 'logout']);
 
+$user->addGet('', ['action' => 'index']);
+$user->addPut('/{username}', ['action' => 'edit']);
+$user->addPost('', ['action' => 'create']);
+$user->addDelete('/{username}',['action' => 'delete']);
+$router->mount($user);
+
+$product = new Group(['controller'=>'Product']);
+$product->setPrefix('/product');
+
+$product->addGet('', ['action' => 'index']);
+$product->addPut('/{id}', ['action' => 'edit']);
+$product->addPost('', ['action' => 'create']);
+$product->addDelete('/{id}',['action' => 'delete']);
+$router->mount($product);
+
+$userGroup = new Group(['controller'=>'UserGroup']);
+$userGroup->setPrefix('/USGroup');
+
+$userGroup->addGet('', ['action' => 'index']);
+$userGroup->addPut('/{id}', ['action' => 'edit']);
+$userGroup->addPost('', ['action' => 'create']);
+$userGroup->addDelete('/{id}',['action' => 'delete']);
 $router->mount($userGroup);
-
 
 $router->notFound(
     [

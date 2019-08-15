@@ -8,6 +8,14 @@ $loader = new \Phalcon\Loader();
 $loader->registerDirs(
     [
         $config->application->controllersDir,
-        $config->application->modelsDir
+        $config->application->modelsDir,
+        APP_PATH . '/helpers/',
     ]
-)->register();
+    );
+
+$loader->registerNamespaces(
+    [
+        'CoreAPI\Helpers'         => APP_PATH . '/helpers/'
+    ]
+);
+$loader->register();
