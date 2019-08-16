@@ -25,22 +25,22 @@ class UserGroupController extends \Phalcon\Mvc\Controller
             return("You don't have permission");
     }
     public function editAction(){
-        if(GeneralHelper::checkPermission('User','update'))
+        if(GeneralHelper::checkPermission('UserGroup','update'))
         {
-            $username=$this->dispatcher->getParam('username');
-            $data=$this->request->getPut();
-            $userHelper = new UserHelper();
-            return json_encode($userHelper->updateUser($username,$data));
+            $id=$this->dispatcher->getParam('id');
+            $permission=$this->request->getPut('permission');
+            $userGroupHelper = new UserGroupHelper();
+            return json_encode($userGroupHelper->updateUserGroup($id,$permission));
         }
         else
             return("You don't have permission");
     }
     public function deleteAction(){
-        if(GeneralHelper::checkPermission('User','delete'))
+        if(GeneralHelper::checkPermission('UserGroup','delete'))
         {
-            $username=$this->dispatcher->getParam('username');
-            $userHelper = new UserHelper();
-            return json_encode($userHelper->deleteUser($username));
+            $id=$this->dispatcher->getParam('id');
+            $userGroupHelper = new UserGroupHelper();
+            return json_encode($userGroupHelper->deleteUserGroup($id));
         }
         else
             return("You don't have permission");

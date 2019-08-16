@@ -63,20 +63,19 @@ $di->setShared('view', function () {
 $di->setShared('db', function () {
     $config = $this->getConfig();
 
-    $class = 'Phalcon\Db\Adapter\Pdo\\' . $config->database->adapter;
-    $params = [
-        'host'     => $config->database->host,
-        'username' => $config->database->username,
-        'password' => $config->database->password,
-        'dbname'   => $config->database->dbname,
-        'charset'  => $config->database->charset
-    ];
+	$conn = new MongoDB\Client("mongodb://localhost:27017");  
+    $connection = $conn->test;
+    // $class = 'Phalcon\Db\Adapter\Pdo\\' . $config->database->adapter;
+    // $params = [
+        // 'host'     => $config->database->host,
+        // 'username' => $config->database->username,
+        // 'password' => $config->database->password,
+        // 'dbname'   => $config->database->dbname,
+        // 'charset'  => $config->database->charset
+    // ];
 
-    if ($config->database->adapter == 'Postgresql') {
-        unset($params['charset']);
-    }
 
-    $connection = new $class($params);
+    // $connection = new $class($params);
 
     return $connection;
 });

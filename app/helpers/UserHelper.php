@@ -39,7 +39,8 @@ class UserHelper extends Component{
             return "{'status': '0'}";
     }
     public function deleteUser($id){
-        return $this->db->execute("DELETE FROM User WHERE username='{$this->dispatcher->getParam('username')}'");
+        $result = $this->db->execute("DELETE FROM User WHERE username='{$this->dispatcher->getParam('username')}'");
+        return "{'status': '0'}";
     }
     public function loginUser($data){
         $username=$data['username'];
@@ -47,7 +48,7 @@ class UserHelper extends Component{
         if($this->session->has('user'))
             return("You're logged in before");
         else{
-            $user = $this->db->fetchOne("SELECT username,groupname,permission FROM User,UserGroup WHERE username='{$username}' AND password='{$password}' and usergroup=id");
+            $user = $this->db->fetchOne("SELECT username,permission FROM User,UserGroup WHERE username='{$username}' AND password='{$password}' and usergroup=id");
             if ($user)
             {
                 $this->session->set('user',$user);

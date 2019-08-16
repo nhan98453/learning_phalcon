@@ -11,7 +11,7 @@ class ProductController extends \Phalcon\Mvc\Controller
             $productHelper = new ProductHelper();
             $page = $_GET['page'] ?? null;
             $result = $productHelper->getProduct($page);
-            return json_encode($result);
+            return $result;
         }
         else
             return("You don't have permission");
@@ -23,8 +23,7 @@ class ProductController extends \Phalcon\Mvc\Controller
         {
             $data=$this->request->getPost();
             $productHelper = new ProductHelper();
-            $result=$productHelper->createProduct($data);
-            return "{'status':'$result'}";
+            return $productHelper->createProduct($data);
         }
         else
             return("You don't have permission");
@@ -35,8 +34,7 @@ class ProductController extends \Phalcon\Mvc\Controller
             $id=$this->dispatcher->getParam('id');
             $data=$this->request->getPut();
             $productHelper = new ProductHelper();
-            $result= $productHelper->updateProduct($id,$data);
-            return "{'status':'$result'}";
+            return $productHelper->updateProduct($id,$data);
         }
         else
             return("You don't have permission");
@@ -46,8 +44,7 @@ class ProductController extends \Phalcon\Mvc\Controller
         {
             $id=$this->dispatcher->getParam('id');
             $productHelper = new ProductHelper();
-            $result=$productHelper->deleteProduct($id);
-            return "{'status':'$result'}";
+            return $productHelper->deleteProduct($id);
         }
         else
             return("You don't have permission");

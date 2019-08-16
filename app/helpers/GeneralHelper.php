@@ -7,8 +7,19 @@ use Phalcon\Mvc\User\Component;
 use Phalcon\Di;
 
 class GeneralHelper extends Component{
+	
 	public static function checkAuthorization()
     {
+
+		function getallheaders() {
+			$headers = [];
+			foreach ($_SERVER as $name => $value) {
+				if (substr($name, 0, 5) == 'HTTP_') {
+					$headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+				}
+			}
+			return $headers;
+		}
        
         $token = null;
 
@@ -21,7 +32,7 @@ class GeneralHelper extends Component{
             if ($jwt) {
                 try {
                     //decode the jwt using the key from config
-                    $token = JWT::decode($jwt, SECRET_KEY_JWT, ['HS256']);
+					$token = JWT::decode($jwt, SECRET_KEY_JWT, ['HS256']);
                     return $token;
                 } catch (\Exception $e) {
                    
@@ -39,8 +50,8 @@ class GeneralHelper extends Component{
 
 	public static function checkPermission($modelName, $action)
 	{
-		$roles = self::checkAuthorization()->permission;
-		print_r(json_decode($roles));exit();
+		
+		$roles = json_decode(self::checkAuthorization()->permission);
 		if (!isset($roles->$modelName)) {
 			self::thrownError("You don't have permission to access: " . $modelName);
 		}
@@ -59,5 +70,5 @@ class GeneralHelper extends Component{
 	public static function thrownError($message){
 		die ($message);
 	}
-
+	
 }
