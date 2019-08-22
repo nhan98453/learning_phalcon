@@ -36,6 +36,24 @@ $userGroup->addPost('', ['action' => 'create']);
 $userGroup->addDelete('/{id}',['action' => 'delete']);
 $router->mount($userGroup);
 
+$Category = new Group(['controller'=>'Category']);
+$Category->setPrefix('/category');
+
+$Category->addGet('', ['action' => 'index']);
+$Category->addPut('/{id}', ['action' => 'edit']);
+$Category->addPost('', ['action' => 'create']);
+$Category->addDelete('/{id}',['action' => 'delete']);
+$router->mount($Category);
+
+$Brand = new Group(['controller'=>'Brand']);
+$Brand->setPrefix('/brand');
+
+$Brand->addGet('', ['action' => 'index']);
+$Brand->addPut('/{id}', ['action' => 'edit']);
+$Brand->addPost('', ['action' => 'create']);
+$Brand->addDelete('/{id}',['action' => 'delete']);
+$router->mount($Brand);
+
 $router->notFound(
     [
         'controller' => 'index',

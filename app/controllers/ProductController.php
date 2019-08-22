@@ -9,15 +9,14 @@ class ProductController extends \Phalcon\Mvc\Controller
     {
        if(GeneralHelper::checkPermission('Product', 'select')){
             $productHelper = new ProductHelper();
-            $page = $_GET['page'] ?? null;
-            $result = $productHelper->getProduct($page);
+            $data=$_GET;
+            $result = $productHelper->getProduct($data);
             return $result;
         }
         else
             return("You don't have permission");
       
     }
-
     public function createAction(){
         if(GeneralHelper::checkPermission('Product','create'))
         {

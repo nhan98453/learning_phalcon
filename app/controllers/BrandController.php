@@ -1,15 +1,15 @@
 <?php
 use Phalcon\Db;
-use CoreAPI\Helpers\UserGroupHelper;
+use CoreAPI\Helpers\BrandHelper;
 use CoreAPI\Helpers\GeneralHelper;
-class UserGroupController extends \Phalcon\Mvc\Controller
+class BrandController extends \Phalcon\Mvc\Controller
 {
    
     public function indexAction()
     {
-        if(GeneralHelper::checkPermission('UserGroup','select')){
-            $userGroupHelper = new UserGroupHelper();
-            return $userGroupHelper->getUserGroup();
+        if(GeneralHelper::checkPermission('Brand','select')){
+            $BrandHelper = new BrandHelper();
+            return $BrandHelper->getBrand();
         }
         else
             return("You don't have permission");
@@ -18,29 +18,29 @@ class UserGroupController extends \Phalcon\Mvc\Controller
         if(GeneralHelper::checkPermission('User','select'))
         {
             $data= $this->request->getPost();
-            $userGroupHelper = new UserGroupHelper();
-            return $userGroupHelper->createUserGroup($data);
+            $BrandHelper = new BrandHelper();
+            return $BrandHelper->createBrand($data);
         }
         else
             return("You don't have permission");
     }
     public function editAction(){
-        if(GeneralHelper::checkPermission('UserGroup','update'))
+        if(GeneralHelper::checkPermission('Brand','update'))
         {
             $id=$this->dispatcher->getParam('id');
             $data=$this->request->getPut();
-            $userGroupHelper = new UserGroupHelper();
-            return $userGroupHelper->updateUserGroup($id,$data);
+            $BrandHelper = new BrandHelper();
+            return $BrandHelper->updateBrand($id,$data);
         }
         else
             return("You don't have permission");
     }
     public function deleteAction(){
-        if(GeneralHelper::checkPermission('UserGroup','delete'))
+        if(GeneralHelper::checkPermission('Brand','delete'))
         {
             $id=$this->dispatcher->getParam('id');
-            $userGroupHelper = new UserGroupHelper();
-            return $userGroupHelper->deleteUserGroup($id);
+            $BrandHelper = new BrandHelper();
+            return $BrandHelper->deleteBrand($id);
         }
         else
             return("You don't have permission");

@@ -9,7 +9,7 @@ class UserController extends \Phalcon\Mvc\Controller
     {
         if(GeneralHelper::checkPermission('User','select')){
             $userHelper = new UserHelper();
-            return json_encode($userHelper->getUser());
+            return $userHelper->getUser();
         }
         else
             return("You don't have permission");
@@ -19,7 +19,7 @@ class UserController extends \Phalcon\Mvc\Controller
         {
             $data= $this->request->getPost();
             $userHelper = new UserHelper();
-            return json_encode($userHelper->createUser($data));
+            return $userHelper->createUser($data);
         }
         else
             return("You don't have permission");
@@ -30,7 +30,7 @@ class UserController extends \Phalcon\Mvc\Controller
             $username=$this->dispatcher->getParam('username');
             $data=$this->request->getPut();
             $userHelper = new UserHelper();
-            return json_encode($userHelper->updateUser($username,$data));
+            return $userHelper->updateUser($username,$data);
         }
         else
             return("You don't have permission");
@@ -40,7 +40,7 @@ class UserController extends \Phalcon\Mvc\Controller
         {
             $username=$this->dispatcher->getParam('username');
             $userHelper = new UserHelper();
-            return json_encode($userHelper->deleteUser($username));
+            return $userHelper->deleteUser($username);
         }
         else
             return("You don't have permission");

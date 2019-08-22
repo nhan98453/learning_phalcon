@@ -1069,3 +1069,1151 @@ PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/api/app/helpers/Pro
 PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 23
 PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 23
 PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 08:32:13 [error] 101#101: *9 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 08:32:14 [error] 101#101: *9 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local", referrer: "http://api.local/"
+2019/08/20 08:55:43 [error] 101#101: *13 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 08:55:54 [error] 101#101: *15 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 08:55:55 [error] 101#101: *15 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local", referrer: "http://api.local/"
+2019/08/20 08:56:27 [error] 227#227: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 08:56:28 [error] 227#227: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local", referrer: "http://api.local/"
+2019/08/20 08:56:31 [error] 227#227: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /User HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 08:56:32 [error] 227#227: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local", referrer: "http://api.local/User"
+2019/08/20 08:56:38 [error] 227#227: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /Product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 08:56:39 [error] 227#227: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local", referrer: "http://api.local/Product"
+2019/08/20 08:56:45 [error] 226#226: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /product?page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:01:12 [error] 261#261: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:01:13 [error] 261#261: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local", referrer: "http://api.local/"
+2019/08/20 09:01:18 [error] 261#261: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /product?page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:01:25 [error] 261#261: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:03:16 [error] 261#261: *12 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':', expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 57" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:03:35 [error] 261#261: *12 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: lookup in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:04:08 [error] 261#261: *12 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Driver\Cursor could not be converted to string in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 60" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:08:22 [error] 261#261: *18 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:09:02 [error] 261#261: *18 FastCGI sent in stderr: "PHP message: PHP Warning:  Use of undefined constant permission - assumed 'permission' (this will throw an Error in a future version of PHP) in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64
+PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONArray could not be converted to string in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:09:08 [error] 261#261: *18 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:09:30 [error] 261#261: *18 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ',', expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:10:29 [error] 261#261: *18 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:11:04 [error] 261#261: *18 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:16:46 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:16:57 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ']', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:17:21 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 69" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:17:32 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Warning:  array_push() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:18:25 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Warning:  array_push() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:19:11 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Warning:  array_push() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:21:23 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: json_encode in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 69
+PHP message: PHP Fatal error:  Uncaught Error: Function name must be a string in /mnt/c/DATA/api/app/helpers/UserHelper.php:69
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 69" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:22:45 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:23:11 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Warning:  array_push() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:23:24 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Warning:  array_push() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:24:08 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '{' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:25:12 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:25:18 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:25:44 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:26:39 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, object given in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:26:48 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:27:17 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: MongoDB\Model\BSONArray::$permission in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:28:00 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONArray::toArray() in /mnt/c/DATA/api/app/helpers/UserHelper.php:64
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:28:18 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONArray::toArray() in /mnt/c/DATA/api/app/helpers/UserHelper.php:64
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:28:35 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:29:18 [error] 261#261: *32 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: UserGroup in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:31:14 [error] 261#261: *68 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 64" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:36:24 [error] 261#261: *74 FastCGI sent in stderr: "PHP message: PHP Notice:  Trying to get property 'permission' of non-object in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 54" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:39:50 [error] 261#261: *76 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, object given in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 54" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:41:59 [error] 261#261: *84 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:42:47 [error] 261#261: *84 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, object given in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:42:58 [error] 261#261: *84 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::toString() in /mnt/c/DATA/api/app/helpers/GeneralHelper.php:55
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(10): CoreAPI\Helpers\GeneralHelper::checkPermission('Product', 'select')
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:43:26 [error] 261#261: *84 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, object given in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 54
+PHP message: PHP Warning:  Use of undefined constant roles - assumed 'roles' (this will throw an Error in a future version of PHP) in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:43:47 [error] 261#261: *84 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: stdClass::$toString in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 54
+PHP message: PHP Warning:  Use of undefined constant roles - assumed 'roles' (this will throw an Error in a future version of PHP) in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:43:51 [error] 261#261: *84 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::toString() in /mnt/c/DATA/api/app/helpers/GeneralHelper.php:54
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(10): CoreAPI\Helpers\GeneralHelper::checkPermission('Product', 'select')
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 54" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:44:05 [error] 261#261: *84 FastCGI sent in stderr: "PHP message: PHP Warning:  Use of undefined constant roles - assumed 'roles' (this will throw an Error in a future version of PHP) in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:45:54 [error] 261#261: *94 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /mnt/c/DATA/api/app/helpers/GeneralHelper.php:55
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(10): CoreAPI\Helpers\GeneralHelper::checkPermission('Product', 'select')
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/GeneralHelper.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 09:50:43 [error] 261#261: *101 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::fetchAll() in /mnt/c/DATA/api/app/helpers/UserHelper.php:10
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(12): CoreAPI\Helpers\UserHelper->getUser()
+#1 [internal function]: UserController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:07:15 [error] 261#261: *128 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 43" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:07:47 [error] 261#261: *128 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 43" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:21:48 [error] 261#261: *141 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::insert() in /mnt/c/DATA/api/app/helpers/UserHelper.php:35
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(22): CoreAPI\Helpers\UserHelper->createUser(Array)
+#1 [internal function]: UserController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:21:59 [error] 261#261: *141 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Collection::insert() in /mnt/c/DATA/api/app/helpers/UserHelper.php:35
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(22): CoreAPI\Helpers\UserHelper->createUser(Array)
+#1 [internal function]: UserController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:25:17 [error] 263#263: *148 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:34:29 [error] 261#261: *152 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:41:34 [error] 261#261: *163 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Collection::findById() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:70
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(37): CoreAPI\Helpers\ProductHelper->updateProduct('5d5b6a172baa450...', Array)
+#1 [internal function]: ProductController->editAction('5d5b6a172baa450...')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'editAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 70" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /product/5d5b6a172baa45015c4c0b53 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:42:11 [error] 261#261: *163 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Collection::findById() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:71
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(37): CoreAPI\Helpers\ProductHelper->updateProduct('5d5b6a172baa450...', Array)
+#1 [internal function]: ProductController->editAction('5d5b6a172baa450...')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'editAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 71" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /product/5d5b6a172baa45015c4c0b53 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:50:10 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 54" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/kaito HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:50:26 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/kaito HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:50:32 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONDocument::isDead() in /mnt/c/DATA/api/app/helpers/UserHelper.php:51
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(33): CoreAPI\Helpers\UserHelper->updateUser('kaito', Array)
+#1 [internal function]: UserController->editAction('kaito')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'editAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/kaito HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:50:50 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONDocument::isDead() in /mnt/c/DATA/api/app/helpers/UserHelper.php:51
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(33): CoreAPI\Helpers\UserHelper->updateUser('kaito', Array)
+#1 [internal function]: UserController->editAction('kaito')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'editAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/kaito HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:51:03 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\Driver\Cursor as array in /mnt/c/DATA/api/app/helpers/UserHelper.php:54
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(33): CoreAPI\Helpers\UserHelper->updateUser('kaito', Array)
+#1 [internal function]: UserController->editAction('kaito')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'editAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 54" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/kaito HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:51:24 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONDocument::isDead() in /mnt/c/DATA/api/app/helpers/UserHelper.php:52
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(33): CoreAPI\Helpers\UserHelper->updateUser('kaito', Array)
+#1 [internal function]: UserController->editAction('kaito')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'editAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 52" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/kaito HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:51:30 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function isDead() on null in /mnt/c/DATA/api/app/helpers/UserHelper.php:52
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(33): CoreAPI\Helpers\UserHelper->updateUser('asdasd', Array)
+#1 [internal function]: UserController->editAction('asdasd')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'editAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 52" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/asdasd HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:51:50 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: password in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 54
+PHP message: PHP Notice:  Undefined index: usergroup in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 55
+PHP message: PHP Notice:  Undefined variable: usergroup in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 55
+PHP message: PHP Notice:  Undefined variable: email in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 56
+PHP message: PHP Notice:  Undefined variable: date_updated in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 57" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/kaito HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:52:54 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: usergroup in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/kaito HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:53:08 [error] 261#261: *173 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: usergroup in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /US/kaito HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:56:01 [error] 261#261: *186 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: UserGroup in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:57:09 [error] 261#261: *190 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: UserGroup in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 10:59:56 [error] 261#261: *192 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::deleteOne() in /mnt/c/DATA/api/app/helpers/UserHelper.php:71
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(43): CoreAPI\Helpers\UserHelper->deleteUser('kaitoasdasd')
+#1 [internal function]: UserController->deleteAction('kaitoasdasd')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'deleteAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 71" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "DELETE /US/kaitoasdasd HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:06:29 [error] 261#261: *196 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ']' in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 38" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:06:48 [error] 261#261: *196 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 39" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:07:01 [error] 261#261: *196 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method CoreAPI\Helpers\UserGroupHelper::getUser() in /mnt/c/DATA/api/app/controllers/UsergroupController.php:12
+Stack trace:
+#0 [internal function]: UserGroupController->indexAction()
+#1 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserGroupController), 'indexAction', Array)
+#2 [internal function]: Phalcon\Dispatcher->dispatch()
+#3 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#4 {main}
+  thrown in /mnt/c/DATA/api/app/controllers/UsergroupController.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:07:21 [error] 261#261: *196 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: user in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:10:19 [error] 261#261: *204 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\InsertOneResult could not be converted to string in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 41" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:11:23 [error] 261#261: *204 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: groupname in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 29
+PHP message: PHP Recoverable fatal error:  Object of class MongoDB\InsertOneResult could not be converted to string in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 39" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:18:27 [error] 261#261: *212 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /USGroup/2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:18:38 [error] 261#261: *212 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: MongoDB\UpdateResult::$getModifiedCount in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /USGroup/2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:20:55 [error] 261#261: *220 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 60" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "DELETE /USGroup/2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:21:18 [error] 261#261: *220 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 60" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "DELETE /USGroup/2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:21:26 [error] 261#261: *220 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: MongoDB\DeleteResult::$getDeletedCount in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 61" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "DELETE /USGroup/2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 11:47:13 [error] 1070#1070: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\Client' not found in /mnt/c/DATA/test/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 11:47:13 [error] 1070#1070: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\Client' not found in /mnt/c/DATA/test/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 11:47:53 [error] 1070#1070: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /mnt/c/DATA/test/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 11:47:53 [error] 1070#1070: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /mnt/c/DATA/test/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 11:50:19 [error] 1073#1073: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /mnt/c/DATA/test/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 11:50:19 [error] 1073#1073: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /mnt/c/DATA/test/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 11:50:20 [error] 1073#1073: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /mnt/c/DATA/test/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 11:50:20 [error] 1073#1073: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /mnt/c/DATA/test/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 11:50:20 [error] 1073#1073: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /mnt/c/DATA/test/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 11:50:20 [error] 1073#1073: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoClient' not found in /mnt/c/DATA/test/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 11:52:06 [error] 1070#1070: *22 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Driver\Cursor could not be converted to string in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 11:52:06 [error] 1070#1070: *22 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Driver\Cursor could not be converted to string in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 11:52:43 [error] 1070#1070: *22 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 11:52:43 [error] 1070#1070: *22 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 13:03:05 [error] 1073#1073: *45 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '{' in /mnt/c/DATA/test/index.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 13:03:05 [error] 1073#1073: *45 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '{' in /mnt/c/DATA/test/index.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 13:04:56 [error] 1070#1070: *52 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /mnt/c/DATA/test/index.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 13:04:56 [error] 1070#1070: *52 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /mnt/c/DATA/test/index.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 13:08:18 [error] 1070#1070: *79 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Driver\Cursor could not be converted to string in /mnt/c/DATA/test/index.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 13:09:48 [error] 1070#1070: *79 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: oid in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: oid in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: oid in /mnt/c/DATA/test/index.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 13:10:52 [error] 1070#1070: *79 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ''oid'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /mnt/c/DATA/test/index.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 13:11:02 [error] 1070#1070: *79 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\BSON\ObjectId as array in /mnt/c/DATA/test/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 13:11:52 [error] 1070#1070: *79 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: MongoDB\BSON\ObjectId::$$id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined property: MongoDB\BSON\ObjectId::$$id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined property: MongoDB\BSON\ObjectId::$$id in /mnt/c/DATA/test/index.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 13:20:28 [error] 1070#1070: *100 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: user in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 97" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:22:41 [error] 1070#1070: *100 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: user in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 98" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:23:07 [error] 1070#1070: *100 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: user in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:23:34 [error] 1070#1070: *100 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: user in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 98" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:23:43 [error] 1070#1070: *100 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: user in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 98" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:30:03 [error] 1070#1070: *113 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: user in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 107" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:31:04 [error] 1070#1070: *113 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: user in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 107" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:31:18 [error] 1070#1070: *113 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: usgroup in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:33:57 [error] 1070#1070: *122 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'CoreAPI\Helpers\ObjectId' not found in /mnt/c/DATA/api/app/helpers/UserHelper.php:91
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 91" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:41:10 [error] 1070#1070: *129 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 101" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:45:40 [error] 1070#1070: *140 FastCGI sent in stderr: "PHP message: PHP Warning:  A non-numeric value encountered in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 109" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:57:33 [error] 1070#1070: *172 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, object given in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 102
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function toArray() on null in /mnt/c/DATA/api/app/helpers/UserHelper.php:102
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 102" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:57:49 [error] 1070#1070: *172 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONDocument::toArray() in /mnt/c/DATA/api/app/helpers/UserHelper.php:102
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 102" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:58:46 [error] 1070#1070: *172 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:59:07 [error] 1070#1070: *172 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function toArray() on string in /mnt/c/DATA/api/app/helpers/UserHelper.php:100
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 13:59:36 [error] 1070#1070: *172 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::toArray() in /mnt/c/DATA/api/app/helpers/UserHelper.php:100
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:01:36 [error] 1070#1070: *184 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$user' (T_VARIABLE) in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 101" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:02:22 [error] 1070#1070: *184 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '>' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:02:29 [error] 1070#1070: *184 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '>' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:03:55 [error] 1070#1070: *192 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 1 in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:03:59 [error] 1070#1070: *192 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 0 in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:06:13 [error] 1070#1070: *197 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function CoreAPI\Helpers\toArray() in /mnt/c/DATA/api/app/helpers/UserHelper.php:97
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 97" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:07:18 [error] 1070#1070: *197 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONDocument::toArray() in /mnt/c/DATA/api/app/helpers/UserHelper.php:100
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:07:33 [error] 1070#1070: *197 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONDocument::toArray() in /mnt/c/DATA/api/app/helpers/UserHelper.php:100
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#1 [internal function]: UserController->loginAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:09:07 [error] 1070#1070: *197 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, object given in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:09:16 [error] 1070#1070: *197 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:26:33 [error] 1070#1070: *243 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':', expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 82" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:37:13 [error] 1070#1070: *250 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: toString in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 92" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 14:37:34 [error] 1070#1070: *250 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: _id in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 92" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 15:01:30 [error] 1070#1070: *282 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, object given in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 101" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 15:11:18 [error] 1070#1070: *297 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'CoreAPI\Helpers\ObjectId' not found in /mnt/c/DATA/api/app/helpers/UserHelper.php:39
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(22): CoreAPI\Helpers\UserHelper->createUser(Array)
+#1 [internal function]: UserController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 39" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 15:11:42 [error] 1070#1070: *297 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function CoreAPI\Helpers\ObjectId() in /mnt/c/DATA/api/app/helpers/UserHelper.php:39
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(22): CoreAPI\Helpers\UserHelper->createUser(Array)
+#1 [internal function]: UserController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 39" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 15:11:52 [error] 1070#1070: *297 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'CoreAPI\Helpers\ObjectId' not found in /mnt/c/DATA/api/app/helpers/UserHelper.php:39
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UserController.php(22): CoreAPI\Helpers\UserHelper->createUser(Array)
+#1 [internal function]: UserController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 39" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 15:14:46 [error] 1070#1070: *297 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/20 15:21:53 [error] 1070#1070: *320 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught MongoDB\Driver\Exception\CommandException: $or must be an array in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php:299
+Stack trace:
+#0 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php(299): MongoDB\Driver\Server->executeQuery('test.User', Object(MongoDB\Driver\Query), Array)
+#1 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Collection.php(624): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /mnt/c/DATA/test/index.php(4): MongoDB\Collection->find(Array)
+#3 {main}
+  thrown in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php on line 299" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:21:53 [error] 1070#1070: *320 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught MongoDB\Driver\Exception\CommandException: $or must be an array in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php:299
+Stack trace:
+#0 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php(299): MongoDB\Driver\Server->executeQuery('test.User', Object(MongoDB\Driver\Query), Array)
+#1 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Collection.php(624): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /mnt/c/DATA/test/index.php(4): MongoDB\Collection->find(Array)
+#3 {main}
+  thrown in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php on line 299" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:23:38 [error] 1070#1070: *337 FastCGI sent in stderr: "PHP message: PHP Warning:  A non-numeric value encountered in /mnt/c/DATA/test/index.php on line 8
+PHP message: PHP Warning:  A non-numeric value encountered in /mnt/c/DATA/test/index.php on line 8
+PHP message: PHP Warning:  A non-numeric value encountered in /mnt/c/DATA/test/index.php on line 8
+PHP message: PHP Warning:  A non-numeric value encountered in /mnt/c/DATA/test/index.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:27:41 [error] 1070#1070: *341 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '/' in /mnt/c/DATA/test/index.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:33:15 [error] 1070#1070: *354 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: regex in /mnt/c/DATA/test/index.php on line 4
+PHP message: PHP Fatal error:  Uncaught MongoDB\Driver\Exception\InvalidArgumentException: Cannot use empty keys in filter document in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php:299
+Stack trace:
+#0 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php(299): MongoDB\Driver\Query->__construct(Array, Array)
+#1 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Collection.php(624): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /mnt/c/DATA/test/index.php(4): MongoDB\Collection->find(Array)
+#3 {main}
+  thrown in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php on line 299" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:33:26 [error] 1070#1070: *354 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: regex in /mnt/c/DATA/test/index.php on line 4
+PHP message: PHP Fatal error:  Uncaught MongoDB\Driver\Exception\InvalidArgumentException: Cannot use empty keys in filter document in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php:299
+Stack trace:
+#0 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php(299): MongoDB\Driver\Query->__construct(Array, Array)
+#1 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Collection.php(624): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /mnt/c/DATA/test/index.php(4): MongoDB\Collection->find(Array)
+#3 {main}
+  thrown in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Find.php on line 299" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:35:40 [error] 1070#1070: *367 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'MongoRegex' has no effect in /mnt/c/DATA/test/index.php on line 3
+PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:35:40 [error] 1070#1070: *367 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:36:08 [error] 1070#1070: *371 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:36:22 [error] 1070#1070: *371 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:37:23 [error] 1070#1070: *374 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:37:23 [error] 1070#1070: *374 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:37:28 [error] 1070#1070: *374 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:37:28 [error] 1070#1070: *374 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:37:44 [error] 1070#1070: *374 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:37:44 [error] 1070#1070: *374 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:38:29 [error] 1070#1070: *374 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:38:29 [error] 1070#1070: *374 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:40:31 [error] 1070#1070: *386 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoRegex' not found in /mnt/c/DATA/test/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:40:31 [error] 1070#1070: *386 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoRegex' not found in /mnt/c/DATA/test/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:40:41 [error] 1070#1070: *386 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'MongoDB' has no effect in /mnt/c/DATA/test/index.php on line 3
+PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:40:41 [error] 1070#1070: *386 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'MongoDB' has no effect in /mnt/c/DATA/test/index.php on line 3
+PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:40:53 [error] 1070#1070: *386 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:40:53 [error] 1070#1070: *386 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:41:01 [error] 1070#1070: *386 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:41:01 [error] 1070#1070: *386 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:42:47 [error] 1070#1070: *398 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:42:47 [error] 1070#1070: *398 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/20 15:45:01 [error] 1070#1070: *402 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '/' in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:48:26 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Warning:  Invalid argument supplied for foreach() in /mnt/c/DATA/test/index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:49:07 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Warning:  Invalid argument supplied for foreach() in /mnt/c/DATA/test/index.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:49:39 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Driver\Cursor::count() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:49:47 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Warning:  Invalid argument supplied for foreach() in /mnt/c/DATA/test/index.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:50:12 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:50:28 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:50:42 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Warning:  count() expects at least 1 parameter, 0 given in /mnt/c/DATA/test/index.php on line 6
+PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Driver\Cursor could not be converted to string in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:50:47 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Driver\Cursor::count() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:50:56 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Warning:  Invalid argument supplied for foreach() in /mnt/c/DATA/test/index.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:51:28 [error] 1070#1070: *413 FastCGI sent in stderr: "PHP message: PHP Warning:  Invalid argument supplied for foreach() in /mnt/c/DATA/test/index.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:54:20 [error] 1070#1070: *424 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\UpdateResult could not be converted to string in /mnt/c/DATA/test/index.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 15:56:27 [error] 1070#1070: *427 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught MongoDB\Driver\Exception\BulkWriteException: Cannot apply $inc to a value of non-numeric type. {_id: ObjectId('5d5b6a192baa45015c4c0b55')} has the field 'price' of non-numeric type string in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Update.php:179
+Stack trace:
+#0 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Update.php(179): MongoDB\Driver\Server->executeBulkWrite('test.Product', Object(MongoDB\Driver\BulkWrite), Array)
+#1 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/UpdateMany.php(105): MongoDB\Operation\Update->execute(Object(MongoDB\Driver\Server))
+#2 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Collection.php(1008): MongoDB\Operation\UpdateMany->execute(Object(MongoDB\Driver\Server))
+#3 /mnt/c/DATA/test/index.php(7): MongoDB\Collection->updateMany(Array, Array)
+#4 {main}
+  thrown in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Update.php on line 179" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 16:11:17 [error] 1070#1070: *430 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught MongoDB\Exception\InvalidArgumentException: $pipeline is not a list (unexpected index: "$group") in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Aggregate.php:134
+Stack trace:
+#0 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Collection.php(221): MongoDB\Operation\Aggregate->__construct('test', 'User', Array, Array)
+#1 /mnt/c/DATA/test/index.php(8): MongoDB\Collection->aggregate(Array)
+#2 {main}
+  thrown in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/Aggregate.php on line 134" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/20 16:33:11 [error] 1070#1070: *434 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: result in /mnt/c/DATA/test/index.php on line 8
+PHP message: PHP Notice:  Undefined variable: result in /mnt/c/DATA/test/index.php on line 9
+PHP message: PHP Warning:  Invalid argument supplied for foreach() in /mnt/c/DATA/test/index.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:33:07 [error] 241#241: *6 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /product/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 10:33:22 [error] 241#241: *6 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '"name"' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 60" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /product/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 10:35:57 [error] 241#241: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::execute() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:59
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(26): CoreAPI\Helpers\ProductHelper->createProduct(Array)
+#1 [internal function]: ProductController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /product/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 10:38:58 [error] 241#241: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::execute() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:59
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(26): CoreAPI\Helpers\ProductHelper->createProduct(Array)
+#1 [internal function]: ProductController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /product/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 10:41:03 [error] 241#241: *13 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::execute() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:59
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(26): CoreAPI\Helpers\ProductHelper->createProduct(Array)
+#1 [internal function]: ProductController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /product/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 10:41:07 [error] 241#241: *15 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '"getNextValue('product_id')"' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:41:17 [error] 241#241: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Client::eval() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:42:07 [error] 241#241: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Client::execute() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:42:34 [error] 241#241: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Client::execute() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:44:01 [error] 241#241: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::execute() in /mnt/c/DATA/test/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:44:23 [error] 241#241: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::eval() in /mnt/c/DATA/test/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:46:04 [error] 241#241: *25 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::execute() in /mnt/c/DATA/test/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:49:40 [error] 241#241: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught MongoDB\Exception\InvalidArgumentException: Expected $command to have type "array or object" but found "string" in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Exception/InvalidArgumentException.php:32
+Stack trace:
+#0 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/DatabaseCommand.php(65): MongoDB\Exception\InvalidArgumentException::invalidType('$command', 'db.User.find()', 'array or object')
+#1 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Database.php(178): MongoDB\Operation\DatabaseCommand->__construct('test', 'db.User.find()', Array)
+#2 /mnt/c/DATA/test/index.php(9): MongoDB\Database->command('db.User.find()')
+#3 {main}
+  thrown in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Exception/InvalidArgumentException.php on line 32" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:50:49 [error] 241#241: *29 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MongoDB\Database::command(), 0 passed in /mnt/c/DATA/test/index.php on line 9 and at least 1 expected in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Database.php:168
+Stack trace:
+#0 /mnt/c/DATA/test/index.php(9): MongoDB\Database->command()
+#1 {main}
+  thrown in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Database.php on line 168" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:51:53 [error] 241#241: *29 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught MongoDB\Driver\Exception\CommandException: no such command: 'User', bad cmd: '{ User: 1, $db: "test", $readPreference: { mode: "primaryPreferred" }, lsid: { id: UUID("47fc09ed-1742-4790-8c67-760098269133") } }' in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/DatabaseCommand.php:94
+Stack trace:
+#0 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/DatabaseCommand.php(94): MongoDB\Driver\Server->executeCommand('test', Object(MongoDB\Driver\Command), Array)
+#1 /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Database.php(181): MongoDB\Operation\DatabaseCommand->execute(Object(MongoDB\Driver\Server))
+#2 /mnt/c/DATA/test/index.php(9): MongoDB\Database->command(Array)
+#3 {main}
+  thrown in /mnt/c/DATA/test/vendor/mongodb/mongodb/src/Operation/DatabaseCommand.php on line 94" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:57:33 [error] 241#241: *36 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\Driver\Cursor as array in /mnt/c/DATA/test/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:58:20 [error] 241#241: *36 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\Driver\Cursor as array in /mnt/c/DATA/test/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:58:50 [error] 241#241: *36 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, object given in /mnt/c/DATA/test/index.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:58:57 [error] 241#241: *36 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, object given in /mnt/c/DATA/test/index.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 10:59:47 [error] 241#241: *36 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: retval in /mnt/c/DATA/test/index.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/21 11:06:43 [error] 241#241: *59 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 69" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /product/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 11:36:54 [error] 241#241: *100 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 11:38:29 [error] 241#241: *102 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ']' in /mnt/c/DATA/api/app/helpers/UserHelper.php on line 32" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 11:50:50 [error] 241#241: *120 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 11:51:20 [error] 241#241: *120 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: GroupName in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 11:55:00 [error] 241#241: *128 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function CoreAPI\Helpers\inval() in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php:49
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UsergroupController.php(33): CoreAPI\Helpers\UserGroupHelper->updateUserGroup('3', Array)
+#1 [internal function]: UserGroupController->editAction('3')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserGroupController), 'editAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 49" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /USGroup/3 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 11:55:24 [error] 241#241: *128 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "PUT /USGroup/3 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:01:03 [error] 241#241: *132 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function CoreAPI\Helpers\inval() in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php:66
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/UsergroupController.php(43): CoreAPI\Helpers\UserGroupHelper->deleteUserGroup('3')
+#1 [internal function]: UserGroupController->deleteAction('3')
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserGroupController), 'deleteAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/UserGroupHelper.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "DELETE /USGroup/3 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:10:51 [error] 241#241: *140 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ',' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 63" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /product/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:30:35 [error] 241#241: *148 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use [] for reading in /mnt/c/DATA/api/app/controllers/ProductController.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:31:16 [error] 241#241: *148 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use [] for reading in /mnt/c/DATA/api/app/controllers/ProductController.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:31:30 [error] 241#241: *148 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ')', expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:33:13 [error] 241#241: *148 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:34:48 [error] 241#241: *156 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::find() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:13
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:38:25 [error] 241#241: *165 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:40:43 [error] 241#241: *165 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:40:55 [error] 241#241: *165 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:42:09 [error] 241#241: *165 FastCGI sent in stderr: "PHP message: PHP Notice:  Array to string conversion in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:43:16 [error] 241#241: *165 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '/' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:43:57 [error] 241#241: *165 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '/' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:45:18 [error] 241#241: *181 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '/' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:45:50 [error] 241#241: *181 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\Driver\Cursor as array in /mnt/c/DATA/api/app/helpers/ProductHelper.php:47
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 47" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:47:47 [error] 241#241: *181 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\Driver\Cursor as array in /mnt/c/DATA/api/app/helpers/ProductHelper.php:47
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 47" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:48:31 [error] 241#241: *181 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: collection in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 58
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /mnt/c/DATA/api/app/helpers/ProductHelper.php:58
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 58" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:49:36 [error] 241#241: *181 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: page in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:50:24 [error] 241#241: *181 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '/' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:51:26 [error] 241#241: *181 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: keyword/ in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:51:38 [error] 241#241: *181 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ']', expecting ',' or ')' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 21" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:54:54 [error] 241#241: *181 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, array given in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 13:58:17 [error] 241#241: *216 FastCGI sent in stderr: "PHP message: PHP Warning:  array_push() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 17
+PHP message: PHP Warning:  array_push() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 19
+PHP message: PHP Warning:  array_push() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 21
+PHP message: PHP Notice:  Undefined offset: 1 in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 22
+PHP message: PHP Notice:  Undefined offset: 2 in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:09:26 [error] 241#241: *222 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: keyword in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 15
+PHP message: PHP Notice:  Undefined variable: key in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 25
+PHP message: PHP Notice:  Undefined variable: value in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 25
+PHP message: PHP Warning:  array_combine() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:09:33 [error] 241#241: *222 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: key in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 25
+PHP message: PHP Notice:  Undefined variable: value in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 25
+PHP message: PHP Warning:  array_combine() expects parameter 1 to be array, null given in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:09:50 [error] 241#241: *222 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: keyword in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:10:11 [error] 241#241: *222 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: keyword in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:20:07 [error] 241#241: *246 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:20:38 [error] 241#241: *246 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:20:53 [error] 241#241: *246 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:36:36 [error] 241#241: *251 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function CoreAPI\Helpers\Regex() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:10
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:39:05 [error] 241#241: *256 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '/' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:41:02 [error] 241#241: *263 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\BSON\MongoRegex' not found in /mnt/c/DATA/api/app/helpers/ProductHelper.php:10
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:41:06 [error] 241#241: *263 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'CoreAPI\Helpers\MongoRegex' not found in /mnt/c/DATA/api/app/helpers/ProductHelper.php:10
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:45:09 [error] 241#241: *269 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:45:31 [error] 241#241: *269 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:45:35 [error] 241#241: *269 FastCGI sent in stderr: "PHP message: PHP Warning:  Use of undefined constant i - assumed 'i' (this will throw an Error in a future version of PHP) in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=1&brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 14:46:15 [error] 241#241: *269 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: category_id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?brand_id=1&keyword=red HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 15:29:50 [error] 241#241: *334 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/api/app/helpers/BrandHelper.php on line 27
+PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/api/app/helpers/BrandHelper.php on line 32" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "POST /brand HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 15:38:23 [error] 241#241: *346 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Driver\Cursor::count() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:59
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=6s%20plus HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 15:38:24 [error] 241#241: *346 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Driver\Cursor::count() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:59
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=6s%20plus HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 16:11:34 [error] 241#241: *365 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':', expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=6s%20plus HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 16:11:48 [error] 241#241: *365 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':', expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=6s%20plus HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 16:14:25 [error] 241#241: *369 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '"name"' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=6s%20plus HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 17:06:32 [error] 241#241: *396 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 45" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?brand_id=2&page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 17:07:21 [error] 241#241: *396 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: page in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 80" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?brand_id=2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 17:11:26 [error] 241#241: *413 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONArray::toArray() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:100
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 17:12:47 [error] 241#241: *413 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: Brand in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 62
+PHP message: PHP Notice:  Undefined index: Brand in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 62
+PHP message: PHP Notice:  Undefined index: Brand in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 62" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 17:13:37 [error] 241#241: *413 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 69
+PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 69
+PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 69" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/21 17:14:02 [error] 241#241: *413 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONArray::toArray() in /mnt/c/DATA/api/app/helpers/ProductHelper.php:69
+Stack trace:
+#0 /mnt/c/DATA/api/app/controllers/ProductController.php(13): CoreAPI\Helpers\ProductHelper->getProduct(Array)
+#1 [internal function]: ProductController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ProductController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 69" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?page=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/22 09:18:01 [error] 41#41: *7 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: brand_id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=3 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/22 09:22:37 [error] 41#41: *20 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: category_id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 9
+PHP message: PHP Notice:  Undefined index: brand_id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=HP HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/22 09:23:31 [error] 41#41: *20 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: category_id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 9
+PHP message: PHP Notice:  Undefined index: brand_id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=HP HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/22 09:23:50 [error] 41#41: *20 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: category_id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 9
+PHP message: PHP Notice:  Undefined index: brand_id in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=HP HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/22 09:24:56 [error] 41#41: *24 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$brand_id' (T_VARIABLE) in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=HP HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/22 09:28:55 [error] 41#41: *28 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 31" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?keyword=HP HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/22 09:29:21 [error] 41#41: *28 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: keyword in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/22 09:30:29 [error] 41#41: *33 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':', expecting ']' in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/22 13:05:14 [error] 41#41: *42 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(link của trang web): failed to open stream: No such file or directory in /mnt/c/DATA/test/simple_html_dom.php on line 82" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:05:15 [error] 41#41: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(link của trang web): failed to open stream: No such file or directory in /mnt/c/DATA/test/simple_html_dom.php on line 82" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:05:24 [error] 41#41: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(google.com): failed to open stream: No such file or directory in /mnt/c/DATA/test/simple_html_dom.php on line 82" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:05:24 [error] 41#41: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(google.com): failed to open stream: No such file or directory in /mnt/c/DATA/test/simple_html_dom.php on line 82" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:10:22 [error] 41#41: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:10:23 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:12 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:12 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:13 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function file_get_html() in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:29 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:29 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:42 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'HtmlDomParser' has no effect in /mnt/c/DATA/test/index.php on line 4
+PHP message: PHP Fatal error:  Uncaught Error: Class 'HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:42 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'HtmlDomParser' has no effect in /mnt/c/DATA/test/index.php on line 4
+PHP message: PHP Fatal error:  Uncaught Error: Class 'HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:50 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:50 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:50 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:50 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:11:51 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:11:51 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:12:09 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:12:09 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:12:10 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:12:10 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:12:10 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:12:10 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:12:10 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:12:10 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Sunra\PhpSimple\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:12:58 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'HtmlDomParser\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:12:58 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'HtmlDomParser\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:12:58 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'HtmlDomParser\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:12:58 [error] 43#43: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'HtmlDomParser\HtmlDomParser' not found in /mnt/c/DATA/test/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:25:46 [error] 41#41: *96 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:25:46 [error] 41#41: *96 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:28:37 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:28:37 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:28:37 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:28:37 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:28:38 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:28:38 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:28:38 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:28:38 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:28:38 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:28:38 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:28:38 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:28:38 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:28:44 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:28:44 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:28:50 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:28:50 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function http_response() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:29:51 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:29:51 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:29:51 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:29:54 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:29:54 [error] 41#41: *99 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:33:30 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:33:30 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:33:31 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:33:31 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:33:31 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:33:31 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:33:31 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:33:31 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:33:31 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:33:31 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/22 13:33:32 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/22 13:33:32 [error] 41#41: *129 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /mnt/c/DATA/test/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"

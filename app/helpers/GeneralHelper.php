@@ -51,12 +51,12 @@ class GeneralHelper extends Component{
 	public static function checkPermission($modelName, $action)
 	{
 		
-		$roles = json_decode(self::checkAuthorization()->permission);
-		if (!isset($roles->$modelName)) {
+		$roles = json_decode(json_encode(self::checkAuthorization()->permission), true);
+		if (!isset($roles[$modelName])) {
 			self::thrownError("You don't have permission to access: " . $modelName);
 		}
 
-		$acl = bindec($roles->$modelName);
+		$acl = bindec($roles[$modelName]);
 		$result = ($acl & ACL_PERMISSION[$action]) === ACL_PERMISSION[$action];
 
 		if ($result == true)
