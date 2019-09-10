@@ -6,16 +6,14 @@ use Phalcon\Mvc\User\Component;
 use MongoDB\BSON\Regex;
 class ProductHelper extends Component{
     public function getProduct($data){
-        $category_id=isset($data['category_id'])?intval($data['category_id']):null;
-        $brand_id=isset($data['brand_id'])?intval($data['brand_id']):null;
-        $keyword=isset($data["keyword"])?new Regex($data["keyword"],'i'):null;
 
-        $filter=[
-            'category_id'=>$category_id??['$ne'=>$category_id],
-            'brand_id'=>$brand_id??['$ne'=>$brand_id],
-            'name'=>$keyword??['$ne'=>$keyword]
-        ];
-        echo(json_encode($filter));die();
+        $filter =[];
+
+        if(isset($data['category_id'])) $filter[ 'category_id'] = (int)$data['category_id'];
+        if(isset($data['brand_id'])) $filter[ 'brand_id'] = $data['brand_id'];
+        if(isset($data["keyword"])) $filter[ 'name'] = ['$regex'=>$data["keyword"],'$options'=>'i'];
+
+        //echo(json_encode($filter));die();
         if(isset($data['page']))
         {
             $options = [

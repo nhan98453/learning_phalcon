@@ -2217,3 +2217,835 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /mnt/c/DATA/test/index.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/23 09:18:15 [error] 560#560: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'CoreAPI\Helpers\UserHelper' not found in /mnt/c/DATA/newspaper/app/controllers/UserController.php:54
+Stack trace:
+#0 [internal function]: UserController->loginAction()
+#1 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#2 [internal function]: Phalcon\Dispatcher->dispatch()
+#3 /mnt/c/DATA/newspaper/public/index.php(42): Phalcon\Mvc\Application->handle()
+#4 {main}
+  thrown in /mnt/c/DATA/newspaper/app/controllers/UserController.php on line 54" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:20:29 [error] 560#560: *3 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'APP_PATH' (T_STRING), expecting ']' in /mnt/c/DATA/newspaper/app/config/loader.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:21:43 [error] 560#560: *5 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'APP_PATH' (T_STRING), expecting ']' in /mnt/c/DATA/newspaper/app/config/loader.php on line 12" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:21:50 [error] 560#560: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'MongoDB\Client' not found in /mnt/c/DATA/newspaper/app/config/services.php:65
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 [internal function]: Phalcon\Di\Service->resolve(NULL, Object(Phalcon\Di\FactoryDefault))
+#2 [internal function]: Phalcon\Di->get('db', NULL)
+#3 [internal function]: Phalcon\Di->getShared('db')
+#4 /mnt/c/DATA/newspaper/app/helpers/UserHelper.php(80): Phalcon\Di\Injectable->__get('db')
+#5 /mnt/c/DATA/newspaper/app/controllers/UserController.php(55): CoreAPI\Helpers\UserHelper->loginUser(Array)
+#6 [internal function]: UserController->loginAction()
+#7 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'loginAction', Array)
+#8 [internal function]: Phalcon\Dispatcher->dispatch()
+#9 /mnt/c/DATA/newspaper/public/index.php(42): Phalcon\Mvc\Application->handle()
+#10 {main}
+  thrown in /mnt/c/DATA/newspaper/app/config/services.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:29:17 [error] 560#560: *20 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 100
+PHP message: PHP Notice:  Undefined index: username in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 102" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:29:58 [error] 560#560: *20 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:30:25 [error] 560#560: *20 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 100" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:30:46 [error] 560#560: *20 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 101" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:32:24 [error] 560#560: *20 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'json_decode' (T_STRING) in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 101" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:32:42 [error] 560#560: *20 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'json_decode' (T_STRING) in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 101" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:37:04 [error] 560#560: *40 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: usergroup in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 18
+PHP message: PHP Notice:  Undefined index: date_created in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 19
+PHP message: PHP Notice:  Undefined index: date_updated in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:38:17 [error] 560#560: *42 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\Driver\Cursor as array in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php:18
+Stack trace:
+#0 /mnt/c/DATA/newspaper/app/controllers/UserController.php(12): CoreAPI\Helpers\UserHelper->getUser()
+#1 [internal function]: UserController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/newspaper/public/index.php(43): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:38:27 [error] 560#560: *42 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 18
+PHP message: PHP Notice:  Undefined index: date_created in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 19
+PHP message: PHP Notice:  Undefined index: date_updated in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:40:22 [error] 560#560: *45 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 18
+PHP message: PHP Notice:  Undefined index: date_created in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 19
+PHP message: PHP Notice:  Undefined index: date_updated in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:40:58 [error] 560#560: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Model\BSONDocument::toArray() in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php:14
+Stack trace:
+#0 /mnt/c/DATA/newspaper/app/controllers/UserController.php(12): CoreAPI\Helpers\UserHelper->getUser()
+#1 [internal function]: UserController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/newspaper/public/index.php(43): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:41:24 [error] 560#560: *45 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: date_created in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 19
+PHP message: PHP Notice:  Undefined index: date_updated in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:42:30 [error] 560#560: *52 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: date_created in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 19
+PHP message: PHP Notice:  Undefined index: date_updated in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 09:59:21 [error] 560#560: *63 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 16
+PHP message: PHP Notice:  Undefined index: user_group_id in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 18
+PHP message: PHP Notice:  Undefined index: date_insert in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 19
+PHP message: PHP Notice:  Undefined index: date_update in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 20
+PHP message: PHP Notice:  Undefined index: user_insert in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 21
+PHP message: PHP Notice:  Undefined index: user_update in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:05:32 [error] 560#560: *69 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare CoreAPI\Helpers\getallheaders() (previously declared in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:15) in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:05:48 [error] 560#560: *69 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare CoreAPI\Helpers\getallheaders() (previously declared in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:15) in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:06:00 [error] 560#560: *69 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:53
+Stack trace:
+#0 /mnt/c/DATA/newspaper/app/controllers/UserController.php(10): CoreAPI\Helpers\GeneralHelper::checkPermission('User', 'select')
+#1 [internal function]: UserController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/newspaper/public/index.php(43): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:06:09 [error] 560#560: *69 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare CoreAPI\Helpers\getallheaders() (previously declared in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:15) in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:06:15 [error] 560#560: *69 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare CoreAPI\Helpers\getallheaders() (previously declared in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:15) in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:07:48 [error] 560#560: *75 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 36
+PHP message: PHP Fatal error:  Cannot redeclare CoreAPI\Helpers\getallheaders() (previously declared in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:15) in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:08:00 [error] 560#560: *75 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: username in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 31" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:08:28 [error] 560#560: *75 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare CoreAPI\Helpers\getallheaders() (previously declared in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:15) in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:08:59 [error] 560#560: *75 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function CoreAPI\Helpers\getallheaders() in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:15
+Stack trace:
+#0 /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php(42): CoreAPI\Helpers\GeneralHelper::checkAuthorization()
+#1 /mnt/c/DATA/newspaper/app/controllers/UserController.php(18): CoreAPI\Helpers\GeneralHelper::checkPermission('User', 'select')
+#2 [internal function]: UserController->createAction()
+#3 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'createAction', Array)
+#4 [internal function]: Phalcon\Dispatcher->dispatch()
+#5 /mnt/c/DATA/newspaper/public/index.php(43): Phalcon\Mvc\Application->handle()
+#6 {main}
+  thrown in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:09:05 [error] 560#560: *75 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare CoreAPI\Helpers\getallheaders() (previously declared in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:15) in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:09:35 [error] 560#560: *75 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function CoreAPI\Helpers\getallheaders() in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php:26
+Stack trace:
+#0 /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php(53): CoreAPI\Helpers\GeneralHelper::checkAuthorization()
+#1 /mnt/c/DATA/newspaper/app/controllers/UserController.php(18): CoreAPI\Helpers\GeneralHelper::checkPermission('User', 'select')
+#2 [internal function]: UserController->createAction()
+#3 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'createAction', Array)
+#4 [internal function]: Phalcon\Dispatcher->dispatch()
+#5 /mnt/c/DATA/newspaper/public/index.php(43): Phalcon\Mvc\Application->handle()
+#6 {main}
+  thrown in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:09:55 [error] 560#560: *75 FastCGI sent in stderr: "PHP message: PHP Deprecated:  Non-static method CoreAPI\Helpers\GeneralHelper::getallheaders() should not be called statically in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 26
+PHP message: PHP Deprecated:  Non-static method CoreAPI\Helpers\GeneralHelper::getallheaders() should not be called statically in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 26
+PHP message: PHP Deprecated:  Non-static method CoreAPI\Helpers\GeneralHelper::getallheaders() should not be called statically in /mnt/c/DATA/newspaper/app/helpers/GeneralHelper.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:10:16 [error] 560#560: *75 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: user_group_id in /mnt/c/DATA/newspaper/app/helpers/UserHelper.php on line 19" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /US/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:25:10 [error] 560#560: *106 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: date_created in /mnt/c/DATA/newspaper/app/helpers/UserGroupHelper.php on line 19
+PHP message: PHP Notice:  Undefined index: date_updated in /mnt/c/DATA/newspaper/app/helpers/UserGroupHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 10:37:04 [error] 560#560: *122 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ']' in /mnt/c/DATA/newspaper/app/helpers/UserGroupHelper.php on line 39" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 11:01:30 [error] 560#560: *136 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /mnt/c/DATA/newspaper/app/helpers/UserGroupHelper.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 11:12:56 [error] 560#560: *163 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: date_created in /mnt/c/DATA/newspaper/app/helpers/CategoryHelper.php on line 18
+PHP message: PHP Notice:  Undefined index: date_updated in /mnt/c/DATA/newspaper/app/helpers/CategoryHelper.php on line 19" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 11:15:43 [error] 560#560: *165 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ''date_insert'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /mnt/c/DATA/newspaper/app/helpers/CategoryHelper.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 11:18:23 [error] 560#560: *169 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /mnt/c/DATA/newspaper/app/helpers/CategoryHelper.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 11:18:48 [error] 560#560: *169 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name_vi in /mnt/c/DATA/newspaper/app/helpers/CategoryHelper.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 11:32:05 [error] 560#560: *179 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: or in /mnt/c/DATA/newspaper/app/helpers/CategoryHelper.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 11:46:06 [error] 560#560: *187 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mb_convert_encoding() in /mnt/c/DATA/test/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/23 11:46:06 [error] 560#560: *187 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mb_convert_encoding() in /mnt/c/DATA/test/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/23 13:00:53 [error] 560#560: *246 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected end of file in /mnt/c/DATA/test/index.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/23 13:00:54 [error] 560#560: *246 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected end of file in /mnt/c/DATA/test/index.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/23 13:07:17 [error] 560#560: *265 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name_vi in /mnt/c/DATA/newspaper/app/helpers/CategoryHelper.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 13:09:53 [error] 560#560: *269 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name_vi in /mnt/c/DATA/newspaper/app/helpers/CategoryHelper.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 13:57:19 [error] 560#560: *294 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Function name must be a string in /mnt/c/DATA/newspaper/app/helpers/TagHelper.php:19
+Stack trace:
+#0 /mnt/c/DATA/newspaper/app/controllers/TagController.php(12): CoreAPI\Helpers\TagHelper->getTag()
+#1 [internal function]: TagController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(TagController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/newspaper/public/index.php(43): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/newspaper/app/helpers/TagHelper.php on line 19" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 14:04:04 [error] 560#560: *301 FastCGI sent in stderr: "PHP message: PHP Warning:  mb_convert_encoding() expects at least 2 parameters, 1 given in /mnt/c/DATA/newspaper/app/helpers/TagHelper.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 14:06:25 [error] 560#560: *305 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: name_standard in /mnt/c/DATA/newspaper/app/helpers/TagHelper.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 14:07:20 [error] 560#560: *305 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: name_standard in /mnt/c/DATA/newspaper/app/helpers/TagHelper.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 14:12:33 [error] 560#560: *321 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name_vi in /mnt/c/DATA/newspaper/app/helpers/TagHelper.php on line 18
+PHP message: PHP Notice:  Undefined index: name_vi in /mnt/c/DATA/newspaper/app/helpers/TagHelper.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: news.local, request: "GET /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "news.local"
+2019/08/23 16:01:56 [error] 1026#1026: *32 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/vendor/autoload.php): failed to open stream: No such file or directory in /mnt/c/DATA/test/index.php on line 2
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/vendor/autoload.php' (include_path='.:/usr/share/php') in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/23 16:01:57 [error] 1026#1026: *32 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/vendor/autoload.php): failed to open stream: No such file or directory in /mnt/c/DATA/test/index.php on line 2
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/vendor/autoload.php' (include_path='.:/usr/share/php') in /mnt/c/DATA/test/index.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/23 16:05:08 [error] 1026#1026: *45 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /mnt/c/DATA/test/index.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/23 16:05:08 [error] 1026#1026: *45 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /mnt/c/DATA/test/index.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/26 08:53:50 [error] 40#40: *11 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, array given in /mnt/c/DATA/api/app/helpers/ProductHelper.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: api.local, request: "GET /product?category_id=3&brand_id=2&keyword=env HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "api.local"
+2019/08/26 09:13:36 [error] 40#40: *38 FastCGI sent in stderr: "PHP message: PHP Warning:  Invalid callback UserGroupController::initialize, cannot access protected method UserGroupController::initialize() in /mnt/c/DATA/news_portal/api/public/index.php on line 43" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 09:25:56 [error] 40#40: *49 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'ControllerBase' not found in /mnt/c/DATA/news_portal/api/app/controllers/IndexController.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local", referrer: "http://newsportal.local/article/"
+2019/08/26 09:27:45 [error] 40#40: *54 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'ControllerBase' not found in /mnt/c/DATA/news_portal/api/app/controllers/IndexController.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local", referrer: "http://newsportal.local/article/"
+2019/08/26 09:27:53 [error] 40#40: *54 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'ControllerBase' not found in /mnt/c/DATA/news_portal/api/app/controllers/IndexController.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local", referrer: "http://newsportal.local/article/"
+2019/08/26 10:16:11 [error] 40#40: *93 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 27
+PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 27
+PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 10:19:14 [error] 40#40: *96 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 40" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 10:19:29 [error] 40#40: *96 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 33
+PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 33
+PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 10:20:01 [error] 40#40: *96 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 10:21:00 [error] 40#40: *96 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 10:22:17 [error] 40#40: *96 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ')', expecting ']' in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 11:08:30 [error] 40#40: *117 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ')', expecting ']' in /mnt/c/DATA/news_portal/api/app/helpers/ArticleHelper.php on line 40" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /article/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 11:09:26 [error] 40#40: *117 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php:29
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/helpers/ArticleHelper.php(43): CoreAPI\Helpers\TagHelper::createTag(Array)
+#1 /mnt/c/DATA/news_portal/api/app/controllers/ArticleController.php(23): CoreAPI\Helpers\ArticleHelper->createArticle(Array)
+#2 [internal function]: ArticleController->createAction()
+#3 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(ArticleController), 'createAction', Array)
+#4 [internal function]: Phalcon\Dispatcher->dispatch()
+#5 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#6 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /article/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 13:05:20 [error] 40#40: *144 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name_vi in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 17
+PHP message: PHP Notice:  Undefined index: name_standard in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 18
+PHP message: PHP Notice:  Undefined index: parent_id in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 19
+PHP message: PHP Notice:  Undefined index: level in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /merchant/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 13:07:38 [error] 40#40: *149 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: logo in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /merchant/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 13:15:18 [error] 40#40: *152 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: checkMerchant in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 35
+PHP message: PHP Notice:  Undefined variable: Merchant in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 38
+PHP message: PHP Notice:  Undefined variable: Merchant in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 39" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /merchant/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 13:15:42 [error] 40#40: *152 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: Merchant in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 37
+PHP message: PHP Notice:  Undefined variable: Merchant in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 38" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /merchant/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 13:40:55 [error] 40#40: *187 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$e' (T_VARIABLE), expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 54" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /merchant/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 13:42:17 [error] 40#40: *187 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Collection::insert() in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php:36
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/controllers/MerchantController.php(23): CoreAPI\Helpers\MerchantHelper->createMerchant(Array)
+#1 [internal function]: MerchantController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(MerchantController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 36" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /merchant/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 14:15:24 [error] 40#40: *223 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: now in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "PUT /merchant/15 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 14:29:02 [error] 40#40: *239 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: user_insert in /mnt/c/DATA/news_portal/api/app/helpers/PatternHelper.php on line 17
+PHP message: PHP Notice:  Undefined index: date_insert in /mnt/c/DATA/news_portal/api/app/helpers/PatternHelper.php on line 18
+PHP message: PHP Notice:  Undefined index: user_update in /mnt/c/DATA/news_portal/api/app/helpers/PatternHelper.php on line 19
+PHP message: PHP Notice:  Undefined index: date_update in /mnt/c/DATA/news_portal/api/app/helpers/PatternHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /pattern/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 16:44:13 [error] 40#40: *275 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: user_group in /mnt/c/DATA/news_portal/api/app/helpers/UserHelper.php on line 91" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/26 16:45:18 [error] 40#40: *275 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/news_portal/api/app/helpers/UserHelper.php on line 91" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 09:35:05 [error] 40#40: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  strtoupper() expects exactly 1 parameter, 2 given in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 09:40:33 [error] 40#40: *14 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 09:40:44 [error] 40#40: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::findOne() in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php:46
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php(20): CoreAPI\Helpers\CategoryHelper->createCategory(Array)
+#1 [internal function]: CategoryController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 46" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 09:42:16 [error] 40#40: *18 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::updateOne() in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php:48
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php(20): CoreAPI\Helpers\CategoryHelper->createCategory(Array)
+#1 [internal function]: CategoryController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 48" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 09:42:42 [error] 40#40: *18 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: children in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 49" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 09:48:53 [error] 41#41: *26 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 58" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 09:49:23 [error] 41#41: *26 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: children in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 09:50:15 [error] 41#41: *26 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: children in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 09:50:44 [error] 41#41: *26 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: children in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 10:50:04 [error] 40#40: *44 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: count in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 47" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 10:55:01 [error] 40#40: *48 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: id in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 102
+PHP message: PHP Notice:  Undefined variable: count in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 102" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "PUT /category/35 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 11:00:59 [error] 40#40: *57 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function CoreAPI\Helpers\pop() in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php:96
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php(71): CoreAPI\Helpers\CategoryHelper->removeChildren(Object(MongoDB\Model\BSONDocument))
+#1 /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php(31): CoreAPI\Helpers\CategoryHelper->updateCategory('36', Array)
+#2 [internal function]: CategoryController->editAction('36')
+#3 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'editAction', Array)
+#4 [internal function]: Phalcon\Dispatcher->dispatch()
+#5 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#6 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 96" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "PUT /category/36 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 11:01:42 [error] 40#40: *57 FastCGI sent in stderr: "PHP message: PHP Notice:  Only variables should be passed by reference in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 96" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "PUT /category/36 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 11:47:57 [error] 40#40: *87 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /mnt/c/DATA/test/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:02:02 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /mnt/c/DATA/test/index.php:26
+Stack trace:
+#0 /mnt/c/DATA/test/index.php(23): updateTreeCategory(Array, 0, '')
+#1 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:02:03 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /mnt/c/DATA/test/index.php:26
+Stack trace:
+#0 /mnt/c/DATA/test/index.php(23): updateTreeCategory(Array, 0, '')
+#1 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 15:02:46 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: db in /mnt/c/DATA/test/index.php on line 26
+PHP message: PHP Notice:  Trying to get property 'category' of non-object in /mnt/c/DATA/test/index.php on line 26
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function find() on null in /mnt/c/DATA/test/index.php:26
+Stack trace:
+#0 /mnt/c/DATA/test/index.php(23): updateTreeCategory(Array, 0, '')
+#1 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:02:46 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: db in /mnt/c/DATA/test/index.php on line 26
+PHP message: PHP Notice:  Trying to get property 'category' of non-object in /mnt/c/DATA/test/index.php on line 26
+PHP message: PHP Fatal error:  Uncaught Error: Call to a member function find() on null in /mnt/c/DATA/test/index.php:26
+Stack trace:
+#0 /mnt/c/DATA/test/index.php(23): updateTreeCategory(Array, 0, '')
+#1 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 15:03:30 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:03:30 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 15:04:22 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:04:22 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 15:04:45 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:04:45 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 15:04:55 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:04:56 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 15:05:03 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:05:03 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 15:05:13 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:05:13 [error] 40#40: *110 FastCGI sent in stderr: "PHP message: PHP Recoverable fatal error:  Object of class MongoDB\Model\BSONDocument could not be converted to string in /mnt/c/DATA/test/index.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 15:20:39 [error] 40#40: *184 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /mnt/c/DATA/test/index.php:10
+Stack trace:
+#0 /mnt/c/DATA/test/index.php(17): updateTreeCategory(Object(MongoDB\Model\BSONDocument), 4, '0,1,40,42,')
+#1 /mnt/c/DATA/test/index.php(17): updateTreeCategory(Object(MongoDB\Model\BSONDocument), 3, '0,1,40,')
+#2 /mnt/c/DATA/test/index.php(17): updateTreeCategory(Object(MongoDB\Model\BSONDocument), 2, '0,1,')
+#3 /mnt/c/DATA/test/index.php(17): updateTreeCategory(Object(MongoDB\Model\BSONDocument), 1, '0,')
+#4 /mnt/c/DATA/test/index.php(24): updateTreeCategory(Array, 0, '')
+#5 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:20:39 [error] 40#40: *184 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /mnt/c/DATA/test/index.php:10
+Stack trace:
+#0 /mnt/c/DATA/test/index.php(17): updateTreeCategory(Object(MongoDB\Model\BSONDocument), 4, '0,1,40,42,')
+#1 /mnt/c/DATA/test/index.php(17): updateTreeCategory(Object(MongoDB\Model\BSONDocument), 3, '0,1,40,')
+#2 /mnt/c/DATA/test/index.php(17): updateTreeCategory(Object(MongoDB\Model\BSONDocument), 2, '0,1,')
+#3 /mnt/c/DATA/test/index.php(17): updateTreeCategory(Object(MongoDB\Model\BSONDocument), 1, '0,')
+#4 /mnt/c/DATA/test/index.php(24): updateTreeCategory(Array, 0, '')
+#5 {main}
+  thrown in /mnt/c/DATA/test/index.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 15:56:03 [error] 40#40: *325 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 32
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 32
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 32" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu&&update HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:56:56 [error] 40#40: *325 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu&&update HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:56:57 [error] 40#40: *325 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu&&update HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:56:57 [error] 40#40: *325 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu&&update HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:56:57 [error] 40#40: *325 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu&&update HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:57:23 [error] 40#40: *325 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33
+PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu&&update HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 15:58:24 [error] 40#40: *325 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: childString in /mnt/c/DATA/test/index.php on line 25
+PHP message: PHP Notice:  Undefined variable: childString in /mnt/c/DATA/test/index.php on line 25
+PHP message: PHP Notice:  Undefined variable: childString in /mnt/c/DATA/test/index.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu&&update HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:07:24 [error] 40#40: *397 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method CoreAPI\Helpers\CategoryHelper::updateChildren() in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php:44
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php(20): CoreAPI\Helpers\CategoryHelper->createCategory(Array)
+#1 [internal function]: CategoryController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 16:07:44 [error] 40#40: *399 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: parent in /mnt/c/DATA/test/index.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu&&update HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:07:59 [error] 40#40: *397 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function CoreAPI\Helpers\updateTreeCategory() in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php:145
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php(44): CoreAPI\Helpers\CategoryHelper->updateTreeCategory(Array, 0, '')
+#1 /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php(20): CoreAPI\Helpers\CategoryHelper->createCategory(Array)
+#2 [internal function]: CategoryController->createAction()
+#3 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#4 [internal function]: Phalcon\Dispatcher->dispatch()
+#5 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#6 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 145" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/27 16:48:42 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:48:42 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:49:07 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:49:07 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:49:20 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:49:20 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:49:20 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:49:20 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:49:21 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:49:21 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:49:27 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:49:27 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:50:26 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:50:26 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:50:32 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:50:32 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:51:07 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:51:07 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:51:07 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:51:07 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:51:07 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:51:07 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:51:08 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:51:08 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:51:08 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:51:08 [error] 40#40: *521 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:52:17 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:52:17 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:52:17 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:52:17 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:52:17 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:52:17 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:52:18 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:52:18 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:52:23 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:52:23 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 16:53:16 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/27 16:53:16 [error] 43#43: *573 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55
+PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/test/index.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local", referrer: "http://test.local/"
+2019/08/27 17:20:54 [error] 40#40: *613 FastCGI sent in stderr: "PHP message: PHP Deprecated:  Non-static method CoreAPI\Helpers\GeneralHelper::toUnicodeToHop() should not be called statically in /mnt/c/DATA/news_portal/api/app/helpers/GeneralHelper.php on line 349" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 10:11:18 [error] 41#41: *8 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Function name must be a string in /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php:18
+Stack trace:
+#0 [internal function]: CategoryController->createAction()
+#1 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#2 [internal function]: Phalcon\Dispatcher->dispatch()
+#3 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#4 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 10:12:06 [error] 41#41: *8 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Function name must be a string in /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php:19
+Stack trace:
+#0 [internal function]: CategoryController->createAction()
+#1 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#2 [internal function]: Phalcon\Dispatcher->dispatch()
+#3 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#4 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php on line 19" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 10:12:34 [error] 41#41: *8 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Function name must be a string in /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php:18
+Stack trace:
+#0 [internal function]: CategoryController->createAction()
+#1 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#2 [internal function]: Phalcon\Dispatcher->dispatch()
+#3 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#4 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 10:31:40 [error] 41#41: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::findOne() in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php:41
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/controllers/CategoryController.php(20): CoreAPI\Helpers\CategoryHelper->createCategory(Array)
+#1 [internal function]: CategoryController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 41" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 10:32:33 [error] 41#41: *27 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/29 10:32:56 [error] 41#41: *27 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 14
+PHP message: PHP Notice:  Undefined index: id in /mnt/c/DATA/test/index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /?menu HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/08/29 11:21:30 [error] 41#41: *71 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ']', expecting ',' or ')' in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 82" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "DELETE /category/51 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 11:44:33 [error] 42#42: *87 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: permission in /mnt/c/DATA/news_portal/api/app/helpers/UserHelper.php on line 98" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /US/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 11:55:43 [error] 41#41: *93 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, array given in /mnt/c/DATA/news_portal/api/app/controllers/TagController.php on line 19
+PHP message: PHP Warning:  Invalid argument supplied for foreach() in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 11:56:20 [error] 41#41: *93 FastCGI sent in stderr: "PHP message: PHP Warning:  Invalid argument supplied for foreach() in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 11:57:06 [error] 41#41: *93 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, array given in /mnt/c/DATA/news_portal/api/app/controllers/TagController.php on line 20
+PHP message: PHP Warning:  Invalid argument supplied for foreach() in /mnt/c/DATA/news_portal/api/app/helpers/TagHelper.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /tag HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 13:17:10 [error] 41#41: *116 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "PUT /category/61 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 13:17:42 [error] 41#41: *116 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: name in /mnt/c/DATA/news_portal/api/app/helpers/CategoryHelper.php on line 51" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "PUT /category/61 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 13:21:46 [error] 41#41: *131 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, array given in /mnt/c/DATA/news_portal/api/app/helpers/UserGroupHelper.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 13:22:10 [error] 41#41: *131 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, array given in /mnt/c/DATA/news_portal/api/app/helpers/UserGroupHelper.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 13:24:42 [error] 41#41: *137 FastCGI sent in stderr: "PHP message: PHP Warning:  json_decode() expects parameter 1 to be string, array given in /mnt/c/DATA/news_portal/api/app/helpers/UserGroupHelper.php on line 49" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "PUT /USGroup/1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 13:56:15 [error] 41#41: *186 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: MongoDB\InsertOneResult::$getInsertedID in /mnt/c/DATA/news_portal/api/app/helpers/MerchantHelper.php on line 38" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /merchant/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 15:35:55 [error] 41#41: *229 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /mnt/c/DATA/news_portal/api/app/helpers/GeneralHelper.php:66
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/helpers/UserHelper.php(24): CoreAPI\Helpers\GeneralHelper::getMaxId('user_id')
+#1 /mnt/c/DATA/news_portal/api/app/controllers/UserController.php(20): CoreAPI\Helpers\UserHelper->createUser(Array)
+#2 [internal function]: UserController->createAction()
+#3 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'createAction', Array)
+#4 [internal function]: Phalcon\Dispatcher->dispatch()
+#5 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#6 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/GeneralHelper.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 15:44:25 [error] 41#41: *231 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::findOne() in /mnt/c/DATA/news_portal/api/app/helpers/GeneralHelper.php:66
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/app/helpers/UserHelper.php(24): CoreAPI\Helpers\GeneralHelper::getMaxId('user_id')
+#1 /mnt/c/DATA/news_portal/api/app/controllers/UserController.php(20): CoreAPI\Helpers\UserHelper->createUser(Array)
+#2 [internal function]: UserController->createAction()
+#3 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserController), 'createAction', Array)
+#4 [internal function]: Phalcon\Dispatcher->dispatch()
+#5 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#6 {main}
+  thrown in /mnt/c/DATA/news_portal/api/app/helpers/GeneralHelper.php on line 66" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 17:13:35 [error] 41#41: *252 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/mnt/c/DATA/news_portal/api/vendor/autoload.php): failed to open stream: No such file or directory in /mnt/c/DATA/news_portal/api/public/index.php on line 8
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/mnt/c/DATA/news_portal/api/vendor/autoload.php' (include_path='.:/usr/share/php') in /mnt/c/DATA/news_portal/api/public/index.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 17:14:45 [error] 41#41: *254 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'CoreAPI\Helpers\GeneralHelper' not found in /mnt/c/DATA/news_portal/api/controllers/BaseController.php:8
+Stack trace:
+#0 [internal function]: BaseController->initialize()
+#1 [internal function]: Phalcon\Dispatcher->dispatch()
+#2 /mnt/c/DATA/news_portal/api/public/index.php(43): Phalcon\Mvc\Application->handle()
+#3 {main}
+  thrown in /mnt/c/DATA/news_portal/api/controllers/BaseController.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 17:18:48 [error] 41#41: *260 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Phalcon\Config::$modelsDir in /mnt/c/DATA/news_portal/api/config/loader.php on line 11
+PHP message: PHP Notice:  Undefined property: Phalcon\Config::$viewsDir in /mnt/c/DATA/news_portal/api/config/services.php on line 38" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/29 17:19:49 [error] 41#41: *260 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Phalcon\Config::$viewsDir in /mnt/c/DATA/news_portal/api/config/services.php on line 38" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/30 10:01:07 [error] 40#40: *9 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /mnt/c/DATA/news_portal/helpers/GeneralHelper.php on line 404" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/30 10:02:51 [error] 40#40: *11 FastCGI sent in stderr: "PHP message: PHP Warning:  preg_replace(): No ending delimiter '/' found in /mnt/c/DATA/news_portal/helpers/GeneralHelper.php on line 404" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/30 10:43:02 [error] 40#40: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method CoreAPI\Helpers\GeneralHelper::calculateTimeRunning() in /mnt/c/DATA/news_portal/helpers/GeneralHelper.php:454
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/controllers/CategoryController.php(9): CoreAPI\Helpers\GeneralHelper::getContent('https://www.ela...')
+#1 [internal function]: CategoryController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/news_portal/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/news_portal/helpers/GeneralHelper.php on line 454" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/30 11:19:02 [error] 40#40: *97 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Phalcon\Config::$modelsDir in /mnt/c/DATA/news_portal/api/config/loader.php on line 11" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/30 11:20:21 [error] 40#40: *97 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Phalcon\Config::$viewsDir in /mnt/c/DATA/news_portal/api/config/services.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/08/30 11:26:55 [error] 40#40: *104 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method Phalcon\Mvc\Application::main() in /mnt/c/DATA/news_portal/api/public/index.php:41
+Stack trace:
+#0 {main}
+  thrown in /mnt/c/DATA/news_portal/api/public/index.php on line 41" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 16:17:36 [error] 40#40: *10 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: Phalcon\Config::$host in /mnt/c/DATA/news_portal/api/config/services.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 16:56:31 [error] 40#40: *74 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: MongoDB\Collection::$cluster in /mnt/c/DATA/news_portal/api/config/services.php on line 47" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 16:57:27 [error] 40#40: *74 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\Database as array in /mnt/c/DATA/news_portal/api/config/services.php:47
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 [internal function]: Phalcon\Di\Service->resolve(NULL, Object(Phalcon\Di\FactoryDefault))
+#2 [internal function]: Phalcon\Di->get('db', NULL)
+#3 [internal function]: Phalcon\Di->getShared('db')
+#4 /mnt/c/DATA/news_portal/api/controllers/BaseController.php(8): Phalcon\Di\Injectable->__get('db')
+#5 [internal function]: BaseController->initialize()
+#6 [internal function]: Phalcon\Dispatcher->dispatch()
+#7 /mnt/c/DATA/news_portal/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#8 {main}
+  thrown in /mnt/c/DATA/news_portal/api/config/services.php on line 47" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 16:58:17 [error] 40#40: *74 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: MongoDB\Driver\Manager::$cluster in /mnt/c/DATA/news_portal/api/config/services.php on line 46" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 16:58:24 [error] 40#40: *74 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Driver\Manager::getCluster() in /mnt/c/DATA/news_portal/api/config/services.php:46
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 [internal function]: Phalcon\Di\Service->resolve(NULL, Object(Phalcon\Di\FactoryDefault))
+#2 [internal function]: Phalcon\Di->get('db', NULL)
+#3 [internal function]: Phalcon\Di->getShared('db')
+#4 /mnt/c/DATA/news_portal/api/controllers/BaseController.php(8): Phalcon\Di\Injectable->__get('db')
+#5 [internal function]: BaseController->initialize()
+#6 [internal function]: Phalcon\Dispatcher->dispatch()
+#7 /mnt/c/DATA/news_portal/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#8 {main}
+  thrown in /mnt/c/DATA/news_portal/api/config/services.php on line 46" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 16:58:43 [error] 40#40: *74 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: MongoDB\Driver\Manager::$cluster in /mnt/c/DATA/news_portal/api/config/services.php on line 46" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 16:58:51 [error] 40#40: *74 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot use object of type MongoDB\Driver\Manager as array in /mnt/c/DATA/news_portal/api/config/services.php:46
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 [internal function]: Phalcon\Di\Service->resolve(NULL, Object(Phalcon\Di\FactoryDefault))
+#2 [internal function]: Phalcon\Di->get('db', NULL)
+#3 [internal function]: Phalcon\Di->getShared('db')
+#4 /mnt/c/DATA/news_portal/api/controllers/BaseController.php(8): Phalcon\Di\Injectable->__get('db')
+#5 [internal function]: BaseController->initialize()
+#6 [internal function]: Phalcon\Dispatcher->dispatch()
+#7 /mnt/c/DATA/news_portal/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#8 {main}
+  thrown in /mnt/c/DATA/news_portal/api/config/services.php on line 46" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 16:59:18 [error] 40#40: *74 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: MongoDB\Driver\Manager::$cluster in /mnt/c/DATA/news_portal/api/config/services.php on line 46" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 17:02:43 [error] 40#40: *94 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method MongoDB\Database::authenticate() in /mnt/c/DATA/news_portal/api/config/services.php:47
+Stack trace:
+#0 [internal function]: Closure->{closure}()
+#1 [internal function]: Phalcon\Di\Service->resolve(NULL, Object(Phalcon\Di\FactoryDefault))
+#2 [internal function]: Phalcon\Di->get('db', NULL)
+#3 [internal function]: Phalcon\Di->getShared('db')
+#4 /mnt/c/DATA/news_portal/api/controllers/BaseController.php(8): Phalcon\Di\Injectable->__get('db')
+#5 [internal function]: BaseController->initialize()
+#6 [internal function]: Phalcon\Dispatcher->dispatch()
+#7 /mnt/c/DATA/news_portal/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#8 {main}
+  thrown in /mnt/c/DATA/news_portal/api/config/services.php on line 47" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/03 17:04:21 [error] 40#40: *94 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Cannot access protected property MongoDB\Driver\Exception\AuthenticationException::$message in /mnt/c/DATA/news_portal/helpers/UserGroupHelper.php:17
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/controllers/UsergroupController.php(10): CoreAPI\Helpers\UserGroupHelper->getUserGroup()
+#1 [internal function]: UserGroupController->indexAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(UserGroupController), 'indexAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/news_portal/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/news_portal/helpers/UserGroupHelper.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /USGroup/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/04 15:44:49 [error] 40#40: *6 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: argv in /mnt/c/DATA/test/test.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/04 15:45:30 [error] 40#40: *6 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /mnt/c/DATA/test/test.php(3) : eval()'d code on line 1" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/04 15:45:41 [error] 40#40: *6 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /mnt/c/DATA/test/test.php(3) : eval()'d code on line 1" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/04 15:45:46 [error] 40#40: *6 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /mnt/c/DATA/test/test.php(3) : eval()'d code on line 1" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/04 16:47:08 [error] 40#40: *23 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected end of file in /mnt/c/DATA/test/test.php(3) : eval()'d code on line 1" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/05 08:36:05 [error] 56#56: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'goto' (T_GOTO), expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in /mnt/c/DATA/test/test.php on line 19" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/05 08:36:32 [error] 56#56: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Division by zero in /mnt/c/DATA/test/test.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/05 08:38:33 [error] 56#56: *19 FastCGI sent in stderr: "PHP message: PHP Warning:  Division by zero in /mnt/c/DATA/test/test.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/05 08:52:08 [error] 56#56: *50 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: result in /mnt/c/DATA/news_portal/helpers/CategoryHelper.php on line 48" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/05 08:54:06 [error] 56#56: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getInsertedCount() on string in /mnt/c/DATA/news_portal/helpers/CategoryHelper.php:50
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/controllers/CategoryController.php(20): CoreAPI\Helpers\CategoryHelper->createCategory(Array)
+#1 [internal function]: CategoryController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/news_portal/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/news_portal/helpers/CategoryHelper.php on line 50" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/05 08:54:33 [error] 56#56: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function getInsertedCount() on null in /mnt/c/DATA/news_portal/helpers/CategoryHelper.php:50
+Stack trace:
+#0 /mnt/c/DATA/news_portal/api/controllers/CategoryController.php(20): CoreAPI\Helpers\CategoryHelper->createCategory(Array)
+#1 [internal function]: CategoryController->createAction()
+#2 [internal function]: Phalcon\Dispatcher->callActionMethod(Object(CategoryController), 'createAction', Array)
+#3 [internal function]: Phalcon\Dispatcher->dispatch()
+#4 /mnt/c/DATA/news_portal/api/public/index.php(42): Phalcon\Mvc\Application->handle()
+#5 {main}
+  thrown in /mnt/c/DATA/news_portal/helpers/CategoryHelper.php on line 50" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /category HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/05 09:04:14 [error] 56#56: *63 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':', expecting ';' in /mnt/c/DATA/test/test.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/05 09:04:51 [error] 56#56: *63 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /mnt/c/DATA/test/test.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/05 09:04:52 [error] 56#56: *63 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /mnt/c/DATA/test/test.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/05 09:04:52 [error] 56#56: *63 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /mnt/c/DATA/test/test.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: test.local, request: "GET /test.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "test.local"
+2019/09/05 10:18:25 [error] 56#56: *130 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/05 10:28:03 [error] 645#645: *5 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: username in /mnt/c/DATA/news_portal/helpers/UserHelper.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/05 11:08:17 [error] 645#645: *22 FastCGI sent in stderr: "PHP message: PHP Warning:  Use of undefined constant MAXIMUM_RETRY_INSERT - assumed 'MAXIMUM_RETRY_INSERT' (this will throw an Error in a future version of PHP) in /mnt/c/DATA/news_portal/helpers/GeneralHelper.php on line 987" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/05 11:08:29 [error] 645#645: *22 FastCGI sent in stderr: "PHP message: PHP Warning:  Use of undefined constant MAXIMUM_RETRY_INSERT - assumed 'MAXIMUM_RETRY_INSERT' (this will throw an Error in a future version of PHP) in /mnt/c/DATA/news_portal/helpers/GeneralHelper.php on line 987" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "POST /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/06 13:43:09 [error] 41#41: *14 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: stdClass::$name in /mnt/c/DATA/news_portal/helpers/GeneralHelper.php on line 39" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
+2019/09/06 13:43:58 [error] 41#41: *14 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined property: stdClass::$username in /mnt/c/DATA/news_portal/helpers/GeneralHelper.php on line 39" while reading response header from upstream, client: 127.0.0.1, server: newsportal.local, request: "GET /US HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "newsportal.local"
